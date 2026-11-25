@@ -2166,3 +2166,16 @@ body::after { background: rgba(212, 158, 141, .2); }
         background-color: #faf6f2;
     }
 }
+
+.react-feature-root { width: 100%; }
+.feature-filters { display: flex; justify-content: center; flex-wrap: wrap; gap: 9px; margin: 0 0 28px; }
+.feature-filter { min-height: 42px; padding: 9px 16px; border: 1px solid rgba(128, 92, 49, .2); border-radius: 999px; color: #654a32; background: rgba(250, 246, 242, .64); font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; transition: background .2s ease, color .2s ease, transform .2s ease, box-shadow .2s ease; }
+.feature-filter:hover { transform: translateY(-2px); background: rgba(212, 158, 141, .25); }
+.feature-filter.active { color: #fffaf7; border-color: transparent; background: linear-gradient(135deg, #b08040, #c78677); box-shadow: 0 8px 18px rgba(128, 92, 49, .2); }
+.feature-filter:focus-visible { outline: 3px solid rgba(176, 128, 64, .5); outline-offset: 3px; }
+.features-section .features-grid { margin-top: 0; }
+
+@media (max-width: 700px) {
+    .feature-filters { gap: 7px; margin-bottom: 22px; }
+    .feature-filter { min-height: 40px; padding: 8px 12px; font-size: 12px; }
+}
